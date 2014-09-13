@@ -1,0 +1,3 @@
+(define binary (m)
+        (if (= 0 (- m (exp 2 (log 2 m))))
+                

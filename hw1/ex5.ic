@@ -1,0 +1,6 @@
+(define fact (x) 
+        (if (= x 1) 
+                x 
+                (* x (fact (- x 1)))))
+
+(define choose (n k) (/ (fact n) (* (fact (- n k)) (fact k))))   

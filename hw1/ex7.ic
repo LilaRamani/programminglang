@@ -1,0 +1,38 @@
+(define mod (m n) (- m (* n (/ m n))))
+
+(define primehelper (x y)
+        (if (= 1 x)
+                0
+                (if (= x y)
+                        1
+                        (if (= 0 (mod x y))
+                                0
+                                (primehelper x (+ y 1))))))
+
+(define prime? (n)
+        (primehelper n 2))
+
+
+(define sumprimes (n) 
+        (if (= n 1)
+                2
+                (+ (nthprime n) (sumprimes (- n 1)))))
+
+(define relprime? (m n)
+        (if (> m n)
+                
+                
+                )
+
+
+(define nthprime (n)
+       (nthprimehelper n 1))
+
+(define nthprimehelper (n x)
+        (if (= n 0)
+                (- x 1)
+                (if (= 1 (prime? x))
+                        (nthprimehelper (- n 1) (+ x 1))
+                        (nthprimehelper n (+ x 1)))))
+                
+
