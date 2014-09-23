@@ -1,0 +1,30 @@
+
+(define prime?test1 ()
+	(if (= (prime? 2) 1) 1 0))
+
+(define prime?test2 ()
+	(if (= (prime? 6) 0) 1 0))
+
+(define relprimetest1 ()
+	(if (= (relprime? 99 2) 1) 1 0))
+
+(define relprimetest2 ()
+	(if (= (relprime? 8 34) 0) 1 0))
+
+(define nthprimetest1 ()
+	(if (= (nthprime 16) 53) 1 0))
+(define nthprimetest2 ()
+	(if (= (nthprime 2) 3) 1 0))
+(define sumprimestest1 ()
+	(if (= (sumprimes 5) 28) 1 0))
+(define sumprimestest2 ()
+	(if (= (sumprimes 1) 2) 1 0))
+
+(prime?test1)
+(prime?test2)
+(relprimetest1)
+(relprimetest2)
+(nthprimetest1)
+(nthprimetest2)
+(sumprimestest1)
+(sumprimestest2)

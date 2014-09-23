@@ -1,0 +1,16 @@
+(define choosetest1 ()
+	(if (= (choose 10 6) 210) 1 0))
+
+(define choosetest2 ()
+        (if (= (choose 0 0) 1) 1 0))
+
+(define choosetest3 ()
+        (if (= (choose 8 8) 1) 1 0))
+
+(define choosetest4 ()
+        (if (= (choose 7 0) 1) 1 0))
+
+(choosetest1)
+(choosetest2)
+(choosetest3)
+(choosetest4)

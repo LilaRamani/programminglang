@@ -1,0 +1,5 @@
+(define fun (m n) (m)
+        (+ m n))
+
+(fun 3 2)
+

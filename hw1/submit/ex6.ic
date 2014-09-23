@@ -1,0 +1,8 @@
+(define or (b c) (if b b c))
+
+(define fib (m) 
+        (if (= m 0)
+                0
+                (if (or (= m 1) (= m 2)) 
+                        1 
+                        (+ (fib (- m 1)) (fib (- m 2))))))  
